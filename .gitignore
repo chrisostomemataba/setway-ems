@@ -1,0 +1,66 @@
+# Node modules
+node_modules/
+
+# Composer dependencies
+/vendor/
+
+# PHP Storm project files
+.idea/
+
+# VS Code settings
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build directories
+/dist/
+/build/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Cache and session files
+/cache/
+/sessions/
+
+# Uploaded files (adjust the path as needed)
+/uploads/
+
+# Backup files
+*.bak
+*.backup
+
+# Configuration files that may contain sensitive information
+config.php
+
+# Compiled PHP files
+*.phar
+
+# Test coverage reports
+/coverage/
+
+# Dependency directories
+/bower_components/
+
+# User-specific files
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+ehthumbs.db
+Icon?

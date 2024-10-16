@@ -1,0 +1,16 @@
+/* styles.css */
+.button-animate {
+    transition: transform 0.2s ease-in-out;
+}
+
+.button-animate:hover {
+    transform: translateY(-2px);
+}
+
+.card-animate {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-animate:hover {
+    transform: translateY(-4px);
+}

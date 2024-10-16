@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* style.css */
+@keyframes buttonHover {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.button-animate {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-animate:hover {
+    animation: buttonHover 0.3s forwards;
+}
+
+.form-animate {
+    transition: box-shadow 0.3s ease;
+}
+
+.form-animate:hover {
+    box-shadow: 0 0 10px rgba(0, 173, 238, 0.5);
+}
+
+::placeholder {
+    opacity: 0.6;
+}
+
+input {
+    padding: 0.5rem 0.75rem; /* Adjust padding for inputs */
+}
+
+/* style.css */
+@keyframes cardHover {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card-animate:hover {
+    animation: cardHover 0.3s forwards;
+    box-shadow: 0 10px 20px rgba(0, 173, 238, 0.2);
+}
+
+.button-animate {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-edit:hover {
+    transform: scale(1.05);
+    background-color: #072444;
+}
+
+.button-delete {
+    background-color: #e3342f;
+}
+
+.button-delete:hover {
+    background-color: #cc1f1a;
+}
+
+.round-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+#employee-cards {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#search {
+    width: 300px;
+}
+
+.card-animate {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-animate:hover {
+    transform: translateY(-10px);
+}
+
+/*styles.css kwa ajili ya the add employee button*/
+.custom-button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #5a74c1;
+  }
+  
+  .custom-button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+  }
+  
+  .custom-button:active {
+    transform: scale(0.9);
+  }
+
+  
+  .Btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: rgb(5, 65, 65);
+  }
+  
+  /* plus sign */
+  .sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .sign svg {
+    width: 17px;
+  }
+  
+  .sign svg path {
+    fill: white;
+  }
+  /* text */
+  .text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+  }
+  /* hover effect on button width */
+  .Btn:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: .3s;
+  }
+  
+  .Btn:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+  }
+  /* hover effect button's text */
+  .Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+  }
+  /* button click effect*/
+  .Btn:active {
+    transform: translate(2px ,2px);
+  }
